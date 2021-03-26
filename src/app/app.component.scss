@@ -1,0 +1,100 @@
+.device-info{
+    position: absolute;
+    font-size: xx-large
+  }
+  .b1{
+    font-size: large;
+    color:#357ab7 !important ;
+  }
+
+  ::ng-deep .dx-datagrid-revert-tooltip {  
+      display: none;  
+  }
+  @media screen and (min-width: 2000px){
+    *{
+      font-size: xx-large;
+    }
+  }
+
+  ::ng-deep .dx-button-mode-outlined.dx-button-default{
+    border-color: #cacfd1;
+    color: #333;
+  }
+
+  ::ng-deep .dx-checkbox-checked .dx-checkbox-icon{
+    background-color: #7ab8eb;
+    color: white;
+}
+.center-element{
+  text-align: center !important;
+}
+  ::ng-deep .dx-data-row td {  
+    text-align: left;  
+}
+
+::ng-deep .dx-datagrid-headers .dx-datagrid-table .dx-row > td {  
+    text-align: left!important  
+}
+
+::ng-deep .dx-editor-cell .dx-texteditor .dx-texteditor-input{
+  text-align: left!important
+} 
+
+::ng-deep .dx-popup-content {
+  background-color: #fafafa;
+}
+
+::ng-deep .dx-datagrid-headers{
+  background-color: #688eaf !important;
+  color: white;
+}
+
+
+ ::ng-deep .dx-datagrid-rowsview .dx-row-focused.dx-data-row > td:not(.dx-focused), 
+ .dx-datagrid-rowsview .dx-row-focused.dx-data-row > tr > td:not(.dx-focused), 
+ .dx-datagrid-rowsview .dx-row-focused.dx-data-row .dx-command-edit:not(.dx-focused) .dx-link {  
+     background-color: #bee2ff!important;
+     color: #333!important;
+ }
+ ::ng-deep .dx-datagrid-rowsview .dx-row-focused.dx-data-row > td:not(.dx-focused) .dx-datagrid-group-opened, 
+ .dx-datagrid-rowsview .dx-row-focused.dx-data-row > tr > td:not(.dx-focused) .dx-datagrid-group-opened, 
+ .dx-datagrid-rowsview .dx-row-focused.dx-data-row .dx-command-edit:not(.dx-focused) .dx-link .dx-datagrid-group-opened, 
+ .dx-datagrid-rowsview .dx-row-focused.dx-data-row > td:not(.dx-focused) .dx-datagrid-group-closed, 
+ .dx-datagrid-rowsview .dx-row-focused.dx-data-row > tr > td:not(.dx-focused) .dx-datagrid-group-closed, 
+ .dx-datagrid-rowsview .dx-row-focused.dx-data-row .dx-command-edit:not(.dx-focused) .dx-link .dx-datagrid-group-closed{
+     color: #333!important;
+ }
+ ::ng-deep.dx-datagrid-group-opened{
+     color: #333!important; 
+ }
+ ::ng-deep .dx-datagrid-group-closed{
+     color: #333!important;
+
+ }
+
+.verticalAlign {  
+  vertical-align: middle!important;  
+}
+.justifyContent {
+  text-align: center;
+}
+
+//INPUT OVERRIDE
+
+  //FORM-ITEM
+  ::ng-deep .dx-texteditor.dx-editor-underlined{
+    border-bottom: 1px solid #7ab8eb;
+  }
+  ::ng-deep .dx-texteditor.dx-state-readonly.dx-editor-underlined {
+    border-bottom-style: none;
+    border-bottom: 1px dashed #7ab8eb !important;
+  }
+  //CHECKBOX
+  ::ng-deep .dx-checkbox-icon{
+    border: 1px solid #7ab8eb;
+  }
+
+  ::ng-deep .dx-datagrid-content .dx-datagrid-table .dx-row .dx-editor-cell .dx-dropdowneditor {
+    margin-left: unset;
+    padding-left: unset;
+  }

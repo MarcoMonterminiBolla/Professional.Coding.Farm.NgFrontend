@@ -1,0 +1,41 @@
+<app-header></app-header>
+
+<div class="home-page">
+    <div class="home-button">
+        <div class="button-container">
+            <div class="button-row">
+                <dx-button    
+                id="dx-Button"
+                stylingMode="default"
+                [width]="'50%'"
+                [height]="'20%'"
+                text="Test"
+                type="default"
+                (onClick)="routingOut('test')"
+                >
+            </dx-button>
+            <dx-button    
+                id="dx-Button"
+                [width]="'50%'"
+                [height]="'20%'"
+                stylingMode="default"
+                text="..."
+                type="default"
+                (onClick)="routingOut('#')"
+            >
+            </dx-button>
+            <dx-button    
+            id="dx-Button"
+            [width]="'50%'"
+            [height]="'20%'"
+            stylingMode="default"
+            text="..."
+            type="default"
+            (onClick)="routingOut('#')"
+            >
+            </dx-button>
+            </div>
+        </div>
+    </div>
+
+</div>

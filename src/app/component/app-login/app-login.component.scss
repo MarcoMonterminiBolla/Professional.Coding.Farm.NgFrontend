@@ -1,0 +1,215 @@
+.page{
+  display: flex;
+  height: 95%;
+  width: 100%;
+  flex-direction: column;
+  flex: 1;
+  text-align: center;
+  .empty-div1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 0.1;
+  }
+  .login-card{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex: 0.6;
+    .login-div{
+      width: 90%;
+      height: 90%;
+      margin: 5%;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      flex: 1;
+      .login-container{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        justify-content: center;
+        .h1{
+          margin-top: unset;
+          margin-bottom: unset;
+        }
+        .avatar-holder{
+          margin-bottom: 1em;
+          display: flex;
+          justify-content: center;
+          .avatar-background{
+            border-radius: 50%;
+            height: 12em;
+            width:  12em;
+            box-shadow: 0px 0px 1em 3.5px #729ab4;
+            .avatar-image{
+                margin-top:20%;
+                width:60%;
+                vertical-align: middle;
+                border-style: none;
+            }
+          }
+   
+        }
+    
+      }
+      @media screen and (min-width: 1500px) and (max-width: 1700px){
+      .login-container{
+        flex:0.2;
+        }
+      }
+  
+      .textbox-container{
+        display: flex;
+        flex-direction: column;
+        flex: 0.5;
+        justify-content: center;
+        .textbox-holder1{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          height: 100%;
+          margin-top: 1em;
+          margin-bottom: 0.5em;
+          dx-text-box{
+            font-size: large;
+            width: 40%;
+            height: 100%;
+            align-self: center;
+            border-color: #fcfcfc #fcfcfc #7ab8eb;
+          }
+          @media screen and (min-width: 1500px) and (max-width: 1700px){
+            dx-text-box{
+              height: 100%;
+              border-bottom:0.1em solid #7ab8eb;
+              border-left:0.1em solid #fcfcfc;
+              border-right:0.1em solid #fcfcfc;
+              border-top:0.1em solid #fcfcfc;
+            }
+          }
+          @media screen and (min-width: 575px) and (max-width: 800px){
+            dx-text-box{
+              width: 100%;
+              height: 100%;
+              border-bottom:0.1em solid #7ab8eb;
+              border-left:  0.1em solid #fcfcfc;
+              border-right: 0.1em solid #fcfcfc;
+              border-top:   0.1em solid #fcfcfc;
+            }
+          }
+        }
+        @media screen and (min-width: 1500px) and (max-width: 1700px){
+          .textbox-holder1{
+            height: 30%;
+          }
+        }
+      }
+  
+      .button-container{
+        display: flex;
+        flex-direction: column;
+        flex: 0.1;
+        .button-row{
+          align-self: center;
+          width: 40%;
+          display: flex;
+          flex-direction: row;
+          flex: 1;
+          justify-content: space-between;
+          .checkbox-container{
+            display: flex;
+            flex-direction: row;
+            ::ng-deep.dx-checkbox-icon {
+              width: 24px;
+              height: 24px;
+              border-radius: 0px;
+            }
+            ::ng-deep.dx-checkbox-checked .dx-checkbox-icon{
+              font: 14px/1 DXIcons;
+              font-size: 1.6em;
+              text-align: center;
+              line-height: 15px;
+            }
+            ::ng-deep.dx-checkbox-checked .dx-checkbox-icon:before {
+              position: absolute;
+              display: block;
+              width: 37px;
+              top: 50%;
+              margin-top: -8px;
+              left: 15%;
+              margin-left: -11px;
+            }
+            ::ng-deep .dx-checkbox-text{
+              font-size: large;
+              display: inline-block;
+              vertical-align: middle;
+              white-space: pre-wrap;
+              word-wrap: break-word;
+              line-height: normal;
+              height: auto;
+              width: auto;
+            }
+            // @media screen and (min-width: 1500px) and (max-width: 1700px){
+            //   // ::ng-deep.dx-checkbox-icon{
+            //   //   width: 50px;
+            //   //   height: 50px;
+            //   // }
+            //   // ::ng-deep.dx-checkbox-checked .dx-checkbox-icon{
+            //   //   font-size: 3.5em;
+            //   // }
+            //   // ::ng-deep .dx-checkbox-text{
+            //   //   font-size: large;
+            //   // }
+            // }
+          }
+          .dx-button{
+            ::ng-deep .dx-button-text{
+              font-size: large;
+            }
+          }
+        }
+        @media screen and (min-width: 575px) and (max-width: 800px){
+          .button-row{
+            width: 60%;
+          }
+        }
+      }
+    }
+  }
+ 
+  @media screen and (min-width: 800px) and (max-width: 1200px){
+   .login-div{
+     flex: 0.8;
+   }
+  }
+  .empty-div2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 0.3;
+  }
+  @media screen and (min-width: 800px) and (max-width: 1200px){
+    .empty-div2{
+      flex: 0.1;
+      margin-top: 2em;
+    }
+   }
+}
+
+::ng-deep .dx-button-mode-outlined.dx-button-default{
+  border-color: #cacfd1 !important;
+  color: #333 !important;
+}
+
+::ng-deep .dx-checkbox-checked .dx-checkbox-icon{
+  background-color: #7ab8eb !important;
+  color: white !important;
+}
+
+  ::ng-deep .dx-texteditor.dx-editor-underlined{
+    border-bottom: 1px solid #7ab8eb !important;
+  }

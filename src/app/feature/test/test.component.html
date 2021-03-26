@@ -1,0 +1,16 @@
+<app-header></app-header>
+<div style="width: 100%; height: 100%;">
+    <label>Valore:</label> 
+    <input type="text" [(ngModel)]="twoWayBindingText" (blur)="displayValue()"/>
+    <button (click)="displayValue()">Bottone</button>
+    <dx-button    
+    id="dx-Button"
+    stylingMode="default"
+    text="Bottone di devextreme"
+    type="default"
+    (onClick)="displayValue()"
+    >
+    </dx-button>
+    <dx-text-box [(value)]="twoWayBindingText"></dx-text-box>
+    Interpolazione del testo: {{twoWayBindingText}}
+</div>

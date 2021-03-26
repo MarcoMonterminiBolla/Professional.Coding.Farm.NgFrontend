@@ -1,0 +1,30 @@
+<header class="header">
+    <div class="header-container">
+        <div class="commissionLogo_holder">
+            <div class="avatar_holder">
+                <div class="avatar-background">
+                    <img class="avatar-image" src="assets/icons/Logo-Intesi-72x72.png" alt="Avatar">              
+                </div>
+            </div>
+            <div class="application_title_holder">
+                <div id="applicationName"><a routerLink="/home">{{principalTitle}}</a></div> 
+            </div>
+        </div>
+        <div class="navigatorTitle_holder">
+            <h1 class="title">{{title}}</h1>
+        </div>
+        <div class="intesi_logo_holder">
+            <dx-drop-down-button
+            id="dx_drop_dow_button"
+            icon="assets/images/user.png"
+            text="Administrator"
+            [width]="'100%'"
+            [height]="'100%'"
+			[items]="homeClassDropDownItem"
+			(onItemClick)="onItemClick($event)"
+		    ></dx-drop-down-button>
+        </div>
+        
+    </div>
+
+</header>

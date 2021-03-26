@@ -1,0 +1,33 @@
+<div class="page">
+  <div class="empty-div1"></div>
+  <div class="login-card">
+    <div class="login-div">
+      <div class="login-container">
+        <div class=avatar-holder>
+          <div class="avatar-background">
+            <img class="avatar-image" src="assets/icons/intesi-software-house.png" alt="Avatar">           
+          </div>
+        </div>
+         <h1 class="h1"> <b class="b1">Login</b></h1> 
+      </div>
+      <div class="textbox-container">
+          <div class="textbox-holder1">
+              <dx-text-box placeholder="Username" [(value)]="loginDto.Username" (onInitialized)="TextBoxSetFocusOnInit($event)" (onKeyDown)="onKeyDown($event)"></dx-text-box>
+          </div>
+          <div class="textbox-holder1">
+              <dx-text-box placeholder="Password"  [(value)]="loginDto.Password" mode="password" (onKeyDown)="onKeyDown($event)"></dx-text-box>
+          </div>
+      </div>
+      <div class="button-container">
+        <div class="button-row">
+          <div class="checkbox-container">
+              <dx-check-box    stylingMode="underlined" [(value)]="loginDto.RememberMe" [width]="'auto'"[height]="'auto'" text="Remember me"></dx-check-box>
+          </div>    
+            <dx-button id="dx-Button" stylingMode="contained" text="Sign in" type="default"  (onClick)="Login()"></dx-button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="empty-div2"></div>
+</div>  
